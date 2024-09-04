@@ -1,0 +1,28 @@
+.admin-table {
+    width: 100%;
+    height: 100vh;
+    text-align: left;
+    position: relative;
+    top: 10vh;
+}
+
+.admin-table-container {
+    position: inherit;
+    /* overflow-y: scroll; */
+}
+
+.admin-download-container {
+    cursor: pointer;
+}
+
+.admin-download {
+    position: fixed;
+    top: 2vh;
+    right: 2vh;
+    z-index: 1000;
+    width: 5vh;
+}
+
+.pagination p {
+    margin-bottom: 0;
+}

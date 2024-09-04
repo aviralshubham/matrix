@@ -1,0 +1,37 @@
+.search_logo {
+    padding-bottom: 0.251vh;
+}
+
+.search_logo::after {
+    height: 2.76vh;
+    width: 2.76vh;
+}
+
+.css-vg7q19-MuiInputBase-root-MuiInput-root:before {
+    border-bottom: 0.251vh solid white !important;
+}
+
+.css-vg7q19-MuiInputBase-root-MuiInput-root {
+    height: 4vh;
+}
+
+.css-vg7q19-MuiInputBase-root-MuiInput-root:after {
+    border-bottom: 0.251vh solid #7d55cb !important;
+}
+
+.css-c63i49-MuiInputBase-input-MuiInput-input {
+    color: white !important;
+    font-family: var(--font-source-sans-pro) !important;
+    font-size: 2vh !important;
+    padding: 0.5vh 0 0.62vh !important;
+}
+
+.css-10jru39-MuiFormControl-root-MuiTextField-root {
+    width: 50.25vh;
+}
+
+@media (min-width: 600px) {
+    .css-3tqgc-MuiContainer-root {
+        max-width: 75.37vh !important;
+    }
+}

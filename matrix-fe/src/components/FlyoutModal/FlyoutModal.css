@@ -1,0 +1,119 @@
+body.active-flyout-modal {
+    overflow-y: hidden;
+}
+
+.btn-flyout-modal {
+    padding: 10px 20px;
+    display: block;
+    margin: 100px auto 0;
+    font-size: 18px;
+}
+
+.flyout-modal,
+.flyout-modal-overlay {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    z-index: 4;
+}
+
+.flyout-modal-overlay {
+    position: absolute;
+    background: linear-gradient(
+        135deg,
+        rgba(255, 255, 255, 0.1),
+        rgba(255, 255, 255, 0)
+    );
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 2px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    z-index: 4;
+}
+
+.flyout-modal-content {
+    position: absolute;
+    overflow: visible;
+    display: inline-block;
+    top: 52%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    line-height: 1.4;
+    padding: 14px 28px;
+    border-radius: 3px;
+    width: 58vw;
+    height: 84vh;
+    border: 1.5px solid #488a84;
+    margin: 4px;
+    background:
+        linear-gradient(to right, #70f2fc 4px, transparent 4px) 0 0,
+        linear-gradient(to left, #70f2fc 4px, transparent 4px) 100% 100%,
+        linear-gradient(to bottom, #70f2fc 4px, transparent 4px) 0 0,
+        linear-gradient(to top, #70f2fc 4px, transparent 4px) 100% 100%,
+        black;
+    background-repeat: no-repeat;
+    background-size: 30px 30px;
+    z-index: 4;
+}
+
+.flyout-modal-close__button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 5px 7px;
+    border: none;
+    background-color: transparent;
+    z-index: 4;
+}
+
+/* to be tested for slant model .flyout-modal-content::before{
+    content: '';
+    display: block;
+    transform: rotate(45deg);
+    position: absolute;
+    top: -14em;
+    right: -0.6em;
+    z-index: 4;
+    background: transparent;
+    border-top: 1.5px solid #70F2FC;
+    height: 1100px;
+    width: 1050px;
+    margin: 4px;
+    background-clip: content-box;
+}
+.flyout-modal-content::after {
+    content: '';
+    display: block;
+    transform: rotate(45deg);
+    position: absolute;
+    top: -10em;
+    right: -8.6em;
+    z-index: 4;
+    background: black;
+    height: 200px;
+    width: 200px;
+} */
+.flyout-modal-content__header {
+    width: 100%;
+    font-size: 3vh;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.6px;
+    background: linear-gradient(90deg, #71ecfa 0%, #9e72ff 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.flyout-modal-content__body {
+    width: 100%;
+    font-size: 20px;
+    margin-top: 40px;
+}

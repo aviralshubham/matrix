@@ -1,0 +1,19 @@
+.navigation {
+    margin-top: 40px;
+}
+
+.navigate-prev {
+    rotate: 180deg;
+    cursor: pointer;
+    float: left;
+}
+
+.navigate-next {
+    cursor: pointer;
+    float: right;
+}
+
+.form-input__container {
+    height: 26vh;
+    overflow-y: auto;
+}

@@ -1,0 +1,25 @@
+.idea-details {
+    height: 61vh;
+
+    text-align: left;
+    padding: 0 3vh;
+    overflow-y: auto;
+}
+.idea-details__child {
+    margin-bottom: 2vh;
+}
+.idea-details__child-header {
+    color: #70f2fc;
+    font-size: 3vh;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.08vh;
+}
+.idea-details__child-statement {
+    color: #fbfafa;
+    font-size: 2.2vh;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 147.3%;
+}

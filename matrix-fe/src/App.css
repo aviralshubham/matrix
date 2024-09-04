@@ -1,0 +1,113 @@
+.App {
+    text-align: center;
+    position: relative;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    max-height: 100vh;
+    background: black;
+    font-display: swap;
+}
+
+h1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    font-size: 24px;
+}
+
+.loader {
+    top: 50%;
+    position: fixed;
+    left: 50%;
+    transform: translateY(-50%);
+}
+
+.notAvailable {
+    position: relative;
+    height: 100vh;
+    top: 50vh;
+    color: #fff;
+}
+
+.header {
+    position: fixed;
+    width: 100%;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 10vh;
+    z-index: 999;
+    animation: 500ms ease-in-out 0s normal none 1 running fadeInDown;
+    padding-top: 0px;
+    background: linear-gradient(
+        135deg,
+        rgba(255, 255, 255, 0.1),
+        rgba(255, 255, 255, 0)
+    );
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 2px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+.header-title {
+    position: absolute;
+    top: 2.5vh;
+    left: 58%;
+    color: #fff;
+    width: max-content;
+    font-size: 3.5vh;
+}
+
+.header__frame {
+    position: absolute;
+    box-sizing: border-box;
+    left: 12%;
+    width: 37.68vh;
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    padding: 0 0 13.225727081298828px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 0.62vh;
+    border-right: 0.25vh solid rgba(255, 255, 255, 0.18);
+}
+
+.header-frameChild {
+    position: relative;
+    width: 56.4vh;
+    height: 5vh;
+    object-fit: cover;
+}
+
+.header__frame-vectorIcon {
+    position: relative;
+    width: max-content;
+    top: 3.768vh;
+    height: 3.517vh;
+    object-fit: cover;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}

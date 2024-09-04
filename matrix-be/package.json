@@ -1,0 +1,33 @@
+{
+    "name": "matrix-services",
+    "version": "0.0.2",
+    "description": "Matrix API",
+    "main": "index.js",
+    "scripts": {
+        "start": "node index.js",
+        "start:dev": "nodemon index.js",
+        "start:prod": "node dist/bundle.js",
+        "build": "webpack",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "Swapnil_Hase@epam.com",
+    "license": "ISC",
+    "dependencies": {
+        "body-parser": "^1.20.0",
+        "cors": "^2.8.5",
+        "dotenv": "^16.3.1",
+        "eslint": "^8.49.0",
+        "exceljs": "^4.3.0",
+        "express": "^4.18.1",
+        "moment": "^2.29.4",
+        "mongodb": "^4.7.0",
+        "mongoose": "^6.4.2",
+        "prettier": "^3.0.3"
+    },
+    "devDependencies": {
+        "html-webpack-plugin": "^5.5.3",
+        "nodemon": "^2.0.18",
+        "webpack": "^5.88.2",
+        "webpack-cli": "^5.1.4"
+    }
+}
